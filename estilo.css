@@ -234,86 +234,39 @@ header button{
     bottom: 5px;
     width: 100%;
 }
-.progreso{
-    background-color: #a35ff9;
-    width: 0;
-}
-/* animaciones */
-.dw{
+.progreso {
     width: 0%;
-    animation: dw 1.5s forwards;
+    height: 10px; /* Ajusta la altura según tu diseño */
+    background-color: #4CAF50; /* Color de la barra */
+    border-radius: 5px;
+    position: relative;
+    transition: width 1.5s ease-in-out;
 }
-@keyframes dw{
-    0%{
-        width: 0%;
-    }
-    100%{
-        width: 95%;
-    }
+
+.progreso span {
+    position: absolute;
+    right: 5px;
+    top: -20px;
+    font-size: 12px;
+    color: #000;
 }
-/* animación diseño grafico */
-.dg{
-    width: 0%;
-    animation: dg 1.5s forwards;
-}
-@keyframes dg{
-    0%{
-        width: 0%;
-    }
-    100%{
-        width: 90%;
-    }
-}
-/* animación base de datos */
-.bd{
-    width: 0%;
-    animation: bd 1.5s forwards;
-}
-@keyframes bd{
-    0%{
-        width: 0%;
-    }
-    100%{
-        width: 85%;
-    }
-}
-/* animación marketing digital */
-.md{
-    width: 0%;
-    animation: md 1.5s forwards;
-}
-@keyframes md{
-    0%{
-        width: 0%;
-    }
-    100%{
-        width: 70%;
-    }
-}
-.ts{
-    width: 0%;
-    animation: md 1.5s forwards;
-}
-@keyframes dw{
-    0%{
-        width: 0%;
-    }
-    100%{
-        width: 95%;
-    }
-}
-/* .gi{
-    width: 0%;
-    animation: md 1.5s forwards;
-}
-@keyframes md{
-    0%{
-        width: 0%;
-    }
-    100%{
-        width: 90%;
-    }
-} */
+
+/* Animaciones dinámicas */
+@keyframes dw { 100% { width: 95%; } }
+@keyframes dg { 100% { width: 90%; } }
+@keyframes bd { 100% { width: 85%; } }
+@keyframes ts { 100% { width: 85%; } }
+@keyframes md { 100% { width: 85%; } }
+@keyframes re { 100% { width: 85%; } }
+
+/* Aplicar animación a cada ID */
+#dw { animation: dw 1.5s forwards; }
+#dg { animation: dg 1.5s forwards; }
+#bd { animation: bd 1.5s forwards; }
+#ts { animation: ts 1.5s forwards; }
+#md { animation: md 1.5s forwards; }
+.re { animation: re 1.5s forwards; }
+
 
 #sobremi .contenido .fila .col img{
     display: block;
