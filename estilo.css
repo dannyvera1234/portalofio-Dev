@@ -652,3 +652,37 @@ footer .contenido .redes a:hover{
         justify-content: center;
     }
 }
+
+#numeros {
+    justify-content: center;
+    text-align: center;
+  }
+  
+  /* Estilos responsivos */
+  @media (max-width: 768px) {
+    #numeros {
+      display: flex; /* Solo en dispositivos móviles */
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .fila {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .col {
+      width: 80%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .num {
+      font-size: 30px;
+    }
+  
+    .texto {
+      font-size: 14px;
+    }
+  }
+  
